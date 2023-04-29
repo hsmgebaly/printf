@@ -75,4 +75,25 @@ int print_string(va_list types, char buffer[],
 }
 
 /*print percent sign */
+/**
+ * print_percent
+ * @types: list
+ * @buffer: buffer
+ * @flags: calc flags
+ * @iwdth: width
+ * @precision: precision
+ * @size: size
+ * Return: number of chars
+ */
+int print_percent(va_list types, char buffer[],
+		int flags, int width, int precision, int size)
+{
+	UNUSED(types);
+	UNUSED(buffer);
+	UNUSED(flags);
+	UNUSED(width);
+	UNUSED(precison);
+	UNUSED(size);
+	return (write(1, "%%", 1));
+}
 
